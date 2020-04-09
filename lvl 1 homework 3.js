@@ -42,11 +42,11 @@ function minPos(arr, i = arr.length - 1, num = arr[i]) {
         i--
     }
     arr.pop()
-    if (arr.length === 0)
+    if (arr.length === 0){
         if (num === undefined) {
             return -1
         } else return num
-
+    }
     return minPos(arr, i, num)
 }
 
